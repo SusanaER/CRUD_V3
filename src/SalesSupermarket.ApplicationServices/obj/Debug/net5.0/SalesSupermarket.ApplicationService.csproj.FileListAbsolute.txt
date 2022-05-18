@@ -1,0 +1,34 @@
+C:\Users\Susana\source\repos\Api\SalesSupermarket\SalesSupermarket.ApplicationServices\bin\Debug\net5.0\SalesSupermarket.ApplicationService.deps.json
+C:\Users\Susana\source\repos\Api\SalesSupermarket\SalesSupermarket.ApplicationServices\bin\Debug\net5.0\SalesSupermarket.ApplicationService.dll
+C:\Users\Susana\source\repos\Api\SalesSupermarket\SalesSupermarket.ApplicationServices\bin\Debug\net5.0\ref\SalesSupermarket.ApplicationService.dll
+C:\Users\Susana\source\repos\Api\SalesSupermarket\SalesSupermarket.ApplicationServices\bin\Debug\net5.0\SalesSupermarket.ApplicationService.pdb
+C:\Users\Susana\source\repos\Api\SalesSupermarket\SalesSupermarket.ApplicationServices\bin\Debug\net5.0\SalesSupermarket.Core.dll
+C:\Users\Susana\source\repos\Api\SalesSupermarket\SalesSupermarket.ApplicationServices\bin\Debug\net5.0\SalesSupermarket.DataAccess.dll
+C:\Users\Susana\source\repos\Api\SalesSupermarket\SalesSupermarket.ApplicationServices\bin\Debug\net5.0\SalesSupermarket.Core.pdb
+C:\Users\Susana\source\repos\Api\SalesSupermarket\SalesSupermarket.ApplicationServices\bin\Debug\net5.0\SalesSupermarket.DataAccess.pdb
+C:\Users\Susana\source\repos\Api\SalesSupermarket\SalesSupermarket.ApplicationServices\obj\Debug\net5.0\SalesSupermarket.ApplicationService.csproj.AssemblyReference.cache
+C:\Users\Susana\source\repos\Api\SalesSupermarket\SalesSupermarket.ApplicationServices\obj\Debug\net5.0\SalesSupermarket.ApplicationService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Susana\source\repos\Api\SalesSupermarket\SalesSupermarket.ApplicationServices\obj\Debug\net5.0\SalesSupermarket.ApplicationService.AssemblyInfoInputs.cache
+C:\Users\Susana\source\repos\Api\SalesSupermarket\SalesSupermarket.ApplicationServices\obj\Debug\net5.0\SalesSupermarket.ApplicationService.AssemblyInfo.cs
+C:\Users\Susana\source\repos\Api\SalesSupermarket\SalesSupermarket.ApplicationServices\obj\Debug\net5.0\SalesSupermarket.ApplicationService.csproj.CoreCompileInputs.cache
+C:\Users\Susana\source\repos\Api\SalesSupermarket\SalesSupermarket.ApplicationServices\obj\Debug\net5.0\SalesSupermarket.ApplicationService.csproj.CopyComplete
+C:\Users\Susana\source\repos\Api\SalesSupermarket\SalesSupermarket.ApplicationServices\obj\Debug\net5.0\SalesSupermarket.ApplicationService.dll
+C:\Users\Susana\source\repos\Api\SalesSupermarket\SalesSupermarket.ApplicationServices\obj\Debug\net5.0\ref\SalesSupermarket.ApplicationService.dll
+C:\Users\Susana\source\repos\Api\SalesSupermarket\SalesSupermarket.ApplicationServices\obj\Debug\net5.0\SalesSupermarket.ApplicationService.pdb
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.ApplicationServices\bin\Debug\net5.0\SalesSupermarket.ApplicationService.deps.json
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.ApplicationServices\bin\Debug\net5.0\SalesSupermarket.ApplicationService.dll
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.ApplicationServices\bin\Debug\net5.0\ref\SalesSupermarket.ApplicationService.dll
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.ApplicationServices\bin\Debug\net5.0\SalesSupermarket.ApplicationService.pdb
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.ApplicationServices\bin\Debug\net5.0\SalesSupermarket.Core.dll
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.ApplicationServices\bin\Debug\net5.0\SalesSupermarket.DataAccess.dll
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.ApplicationServices\bin\Debug\net5.0\SalesSupermarket.Core.pdb
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.ApplicationServices\bin\Debug\net5.0\SalesSupermarket.DataAccess.pdb
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.ApplicationServices\obj\Debug\net5.0\SalesSupermarket.ApplicationService.csproj.AssemblyReference.cache
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.ApplicationServices\obj\Debug\net5.0\SalesSupermarket.ApplicationService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.ApplicationServices\obj\Debug\net5.0\SalesSupermarket.ApplicationService.AssemblyInfoInputs.cache
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.ApplicationServices\obj\Debug\net5.0\SalesSupermarket.ApplicationService.AssemblyInfo.cs
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.ApplicationServices\obj\Debug\net5.0\SalesSupermarket.ApplicationService.csproj.CoreCompileInputs.cache
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.ApplicationServices\obj\Debug\net5.0\SalesSupermarket.ApplicationService.csproj.CopyComplete
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.ApplicationServices\obj\Debug\net5.0\SalesSupermarket.ApplicationService.dll
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.ApplicationServices\obj\Debug\net5.0\ref\SalesSupermarket.ApplicationService.dll
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.ApplicationServices\obj\Debug\net5.0\SalesSupermarket.ApplicationService.pdb

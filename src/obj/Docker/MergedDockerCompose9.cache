@@ -1,0 +1,155 @@
+services:
+  products-database:
+    environment:
+      MYSQL_DATABASE: productsupermarket
+      MYSQL_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: root
+    image: mysql:8.0.22
+    ports:
+    - published: 3368
+      target: 3306
+    restart: always
+    volumes:
+    - sales-datafiles:/var/lib/mysql:rw
+  productssupermarket:
+    build:
+      context: C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src
+      dockerfile: ProductsSupermarket/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: ProductsSupermarket
+      target: base
+    container_name: ProductsSupermarket
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: ''
+    image: productssupermarket:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/net5.0/ProductsSupermarket.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 8001
+      target: 80
+    - published: 779
+      target: 443
+    restart: always
+    tty: true
+    volumes:
+    - C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\ProductsSupermarket:/app:rw
+    - C:\Users\Susana\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\Susana\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\Susana\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Users\Susana\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src:/src:rw
+  regularclients-database:
+    environment:
+      MYSQL_DATABASE: regularclientsupermarket
+      MYSQL_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: root
+    image: mysql:8.0.22
+    ports:
+    - published: 3367
+      target: 3306
+    restart: always
+    volumes:
+    - sales-datafiles:/var/lib/mysql:rw
+  regularclientsupermarket:
+    build:
+      context: C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src
+      dockerfile: RegularClientSupermarket/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: RegularClientSupermarket
+      target: base
+    container_name: RegularClientSupermarket
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: ''
+    image: regularclientsupermarket:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/net5.0/RegularClientSupermarket.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 5001
+      target: 80
+    - published: 778
+      target: 443
+    restart: always
+    tty: true
+    volumes:
+    - C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\RegularClientSupermarket:/app:rw
+    - C:\Users\Susana\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\Susana\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\Susana\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Users\Susana\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src:/src:rw
+  salessupermarket:
+    build:
+      context: C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src
+      dockerfile: SalesSupermarket/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: SalesSupermarket
+      target: base
+    container_name: SalesSupermarket
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: ''
+    image: salessupermarket:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/net5.0/SalesSupermarket.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 5000
+      target: 80
+    - target: 80
+    - published: 777
+      target: 443
+    - target: 443
+    restart: always
+    tty: true
+    volumes:
+    - C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket:/app:rw
+    - C:\Users\Susana\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\Susana\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\Susana\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Users\Susana\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src:/src:rw
+  salessupermarket-database:
+    environment:
+      MYSQL_DATABASE: salesupermarket
+      MYSQL_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: root
+    image: mysql:8.0.22
+    ports:
+    - published: 3366
+      target: 3306
+    restart: always
+    volumes:
+    - sales-datafiles:/var/lib/mysql:rw
+version: '3.4'
+volumes:
+  catalogs-datafiles: {}
+  sales-datafiles: {}

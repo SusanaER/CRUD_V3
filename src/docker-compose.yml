@@ -1,0 +1,82 @@
+version: '3.4'
+
+volumes:
+  salessupermarket-datafiles:
+  regularclients-datafiles:
+  productssupermarket-datafiles:
+
+services:
+  salessupermarket-database:
+    image: mysql:8.0.22
+    ports:
+      - "3366:3306"
+    volumes:
+      - salessupermarket-datafiles:/var/lib/mysql
+    restart: always
+    environment: 
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_DATABASE: salesupermarket
+
+  salessupermarket:
+    image: ${DOCKER_REGISTRY-}salessupermarket
+    build:
+      context: .
+      dockerfile: SalesSupermarket/Dockerfile
+    ports:
+      - "5000:80"
+      - "777:443"
+    restart: always
+    environment: 
+      - ASPNETCORE_ENVIRONMENT=Development
+  
+  regularclients-database:
+    image: mysql:8.0.22
+    ports:
+      - "3367:3306"
+    volumes:
+      - regularclients-datafiles:/var/lib/mysql
+    restart: always
+    environment: 
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_DATABASE: regularclientsupermarket
+
+  regularclientsupermarket:
+    image: ${DOCKER_REGISTRY-}regularclientsupermarket
+    build:
+      context: .
+      dockerfile: RegularClientSupermarket/Dockerfile
+    ports:
+      - "5001:80"
+      - "778:443"
+    restart: always
+    environment: 
+      - ASPNETCORE_ENVIRONMENT=Development
+
+  products-database:
+    image: mysql:8.0.22
+    ports:
+      - "3368:3306"
+    volumes:
+      - productssupermarket-datafiles:/var/lib/mysql
+    restart: always
+    environment: 
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_DATABASE: productsupermarket
+
+  productssupermarket:
+    image: ${DOCKER_REGISTRY-}productssupermarket
+    build:
+      context: .
+      dockerfile: ProductsSupermarket/Dockerfile
+    ports:
+      - "8001:80"
+      - "779:443"
+    restart: always
+    environment: 
+      - ASPNETCORE_ENVIRONMENT=Development

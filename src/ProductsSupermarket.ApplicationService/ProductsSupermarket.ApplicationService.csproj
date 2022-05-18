@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.16" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProductsSupermarket.Core\ProductsSupermarket.Core.csproj" />
+    <ProjectReference Include="..\ProductsSupermarket.DataAccess\ProductsSupermarket.DataAccess.csproj" />
+  </ItemGroup>
+
+</Project>
