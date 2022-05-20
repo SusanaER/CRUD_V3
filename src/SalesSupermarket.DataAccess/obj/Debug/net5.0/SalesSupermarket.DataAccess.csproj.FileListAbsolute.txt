@@ -16,21 +16,3 @@ C:\Users\Susana\source\repos\Api\SalesSupermarket\SalesSupermarket.DataAccess\ob
 C:\Users\Susana\source\repos\Api\SalesSupermarket\SalesSupermarket.DataAccess\obj\Debug\net5.0\ref\SalesSupermarket.DataAccess.dll
 C:\Users\Susana\source\repos\Api\SalesSupermarket\SalesSupermarket.DataAccess\obj\Debug\net5.0\SalesSupermarket.DataAccess.pdb
 C:\Users\Susana\source\repos\Api\SalesSupermarket\SalesSupermarket.DataAccess\obj\Debug\net5.0\SalesSupermarket.DataAccess.genruntimeconfig.cache
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.DataAccess\bin\Debug\net5.0\SalesSupermarket.DataAccess.deps.json
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.DataAccess\bin\Debug\net5.0\SalesSupermarket.DataAccess.runtimeconfig.json
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.DataAccess\bin\Debug\net5.0\SalesSupermarket.DataAccess.runtimeconfig.dev.json
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.DataAccess\bin\Debug\net5.0\SalesSupermarket.DataAccess.dll
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.DataAccess\bin\Debug\net5.0\ref\SalesSupermarket.DataAccess.dll
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.DataAccess\bin\Debug\net5.0\SalesSupermarket.DataAccess.pdb
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.DataAccess\bin\Debug\net5.0\SalesSupermarket.Core.dll
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.DataAccess\bin\Debug\net5.0\SalesSupermarket.Core.pdb
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.DataAccess\obj\Debug\net5.0\SalesSupermarket.DataAccess.csproj.AssemblyReference.cache
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.DataAccess\obj\Debug\net5.0\SalesSupermarket.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.DataAccess\obj\Debug\net5.0\SalesSupermarket.DataAccess.AssemblyInfoInputs.cache
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.DataAccess\obj\Debug\net5.0\SalesSupermarket.DataAccess.AssemblyInfo.cs
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.DataAccess\obj\Debug\net5.0\SalesSupermarket.DataAccess.csproj.CoreCompileInputs.cache
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.DataAccess\obj\Debug\net5.0\SalesSupermarket.DataAccess.csproj.CopyComplete
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.DataAccess\obj\Debug\net5.0\SalesSupermarket.DataAccess.dll
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.DataAccess\obj\Debug\net5.0\ref\SalesSupermarket.DataAccess.dll
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.DataAccess\obj\Debug\net5.0\SalesSupermarket.DataAccess.pdb
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.DataAccess\obj\Debug\net5.0\SalesSupermarket.DataAccess.genruntimeconfig.cache

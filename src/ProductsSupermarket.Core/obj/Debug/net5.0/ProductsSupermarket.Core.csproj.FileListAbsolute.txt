@@ -10,10 +10,6 @@ C:\Users\Susana\source\repos\Api\ProductsSupermarket\ProductsSupermarket.Core\ob
 C:\Users\Susana\source\repos\Api\ProductsSupermarket\ProductsSupermarket.Core\obj\Debug\net5.0\ProductsSupermarket.Core.dll
 C:\Users\Susana\source\repos\Api\ProductsSupermarket\ProductsSupermarket.Core\obj\Debug\net5.0\ref\ProductsSupermarket.Core.dll
 C:\Users\Susana\source\repos\Api\ProductsSupermarket\ProductsSupermarket.Core\obj\Debug\net5.0\ProductsSupermarket.Core.pdb
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\ProductsSupermarket.Core\bin\Debug\net5.0\ProductsSupermarket.Core.deps.json
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\ProductsSupermarket.Core\bin\Debug\net5.0\ProductsSupermarket.Core.dll
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\ProductsSupermarket.Core\bin\Debug\net5.0\ref\ProductsSupermarket.Core.dll
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\ProductsSupermarket.Core\bin\Debug\net5.0\ProductsSupermarket.Core.pdb
 C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\ProductsSupermarket.Core\obj\Debug\net5.0\ProductsSupermarket.Core.csproj.AssemblyReference.cache
 C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\ProductsSupermarket.Core\obj\Debug\net5.0\ProductsSupermarket.Core.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\ProductsSupermarket.Core\obj\Debug\net5.0\ProductsSupermarket.Core.AssemblyInfoInputs.cache

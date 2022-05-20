@@ -19,19 +19,45 @@ namespace ProductsSupermarket.ApplicationService.Products
             _repository = repository;
         }
 
-        public async Task<int> AddProductAsync(Product product)
+        public async Task<string> AddProductAsync(Product product)
         {
-            /*HttpClientHandler clientHandler = new HttpClientHandler();
-            HttpClient brand = new HttpClient(clientHandler);
-            HttpResponseMessage responseOrigin = await brand.GetAsync($"https://host.docker.internal:773/Destination/{journey.OriginId}");
-            responseOrigin.EnsureSuccessStatusCode();
+            try
+            {
+                HttpClientHandler brandHandler = new HttpClientHandler();
+                brandHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
+                HttpClient brand = new HttpClient(brandHandler);
+                HttpResponseMessage responseBrand = await brand.GetAsync($"https://host.docker.internal:779/Brand/{product.BrandId}");
+                responseBrand.EnsureSuccessStatusCode();
 
-            string responseOriginBody = await responseOrigin.Content.ReadAsStringAsync();
+                string responseBrandBody = await responseBrand.Content.ReadAsStringAsync();
 
-            var originR = Newtonsoft.Json.JsonConvert.DeserializeObject(responseOriginBody);*/
+                var BrandR = Newtonsoft.Json.JsonConvert.DeserializeObject(responseBrandBody);
 
-            await _repository.AddAsync(product);
-            return product.Id;
+                HttpClientHandler categoryHandler = new HttpClientHandler();
+                categoryHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
+                HttpClient category = new HttpClient(categoryHandler);
+                HttpResponseMessage responseCategory = await category.GetAsync($"https://host.docker.internal:779/Category/{product.CategorysId}");
+                responseCategory.EnsureSuccessStatusCode();
+
+                string responseCategoryBody = await responseCategory.Content.ReadAsStringAsync();
+
+                var CategoryR = Newtonsoft.Json.JsonConvert.DeserializeObject(responseCategoryBody);
+
+                if (CategoryR == null || BrandR == null)
+                {
+                    return "Error, brand or category not exist";
+                }
+                else
+                {
+                    await _repository.AddAsync(product);
+                    return "Successfully added. ID: " + product.Id;
+                }
+            }
+            catch (Exception e)
+            {
+                return "Exception caught. " + e;
+            }
+
         }
 
         public async Task DeleteProductAsync(int productId)

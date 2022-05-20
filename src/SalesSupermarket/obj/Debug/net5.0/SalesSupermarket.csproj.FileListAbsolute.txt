@@ -364,6 +364,16 @@ C:\Users\Susana\source\repos\Api\SalesSupermarket\SalesSupermarket\obj\Debug\net
 C:\Users\Susana\source\repos\Api\SalesSupermarket\SalesSupermarket\obj\Debug\net5.0\ref\SalesSupermarket.dll
 C:\Users\Susana\source\repos\Api\SalesSupermarket\SalesSupermarket\obj\Debug\net5.0\SalesSupermarket.pdb
 C:\Users\Susana\source\repos\Api\SalesSupermarket\SalesSupermarket\obj\Debug\net5.0\SalesSupermarket.genruntimeconfig.cache
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket\obj\Debug\net5.0\SalesSupermarket.csproj.AssemblyReference.cache
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket\obj\Debug\net5.0\SalesSupermarket.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket\obj\Debug\net5.0\SalesSupermarket.AssemblyInfoInputs.cache
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket\obj\Debug\net5.0\SalesSupermarket.AssemblyInfo.cs
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket\obj\Debug\net5.0\SalesSupermarket.csproj.CoreCompileInputs.cache
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket\obj\Debug\net5.0\SalesSupermarket.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket\obj\Debug\net5.0\SalesSupermarket.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket\obj\Debug\net5.0\SalesSupermarket.dll
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket\obj\Debug\net5.0\ref\SalesSupermarket.dll
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket\obj\Debug\net5.0\SalesSupermarket.pdb
 C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket\bin\Debug\net5.0\appsettings.json
 C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket\bin\Debug\net5.0\SalesSupermarket.StaticWebAssets.xml
@@ -714,19 +724,9 @@ C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket\bin\Debug\
 C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket\bin\Debug\net5.0\SalesSupermarket.ApplicationService.pdb
 C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket\bin\Debug\net5.0\SalesSupermarket.Core.pdb
 C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket\bin\Debug\net5.0\SalesSupermarket.DataAccess.pdb
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket\obj\Debug\net5.0\SalesSupermarket.csproj.AssemblyReference.cache
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket\obj\Debug\net5.0\SalesSupermarket.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket\obj\Debug\net5.0\SalesSupermarket.AssemblyInfoInputs.cache
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket\obj\Debug\net5.0\SalesSupermarket.AssemblyInfo.cs
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket\obj\Debug\net5.0\SalesSupermarket.csproj.CoreCompileInputs.cache
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket\obj\Debug\net5.0\SalesSupermarket.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket\obj\Debug\net5.0\SalesSupermarket.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket\obj\Debug\net5.0\scopedcss\bundle\SalesSupermarket.styles.css
 C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket\obj\Debug\net5.0\staticwebassets\SalesSupermarket.StaticWebAssets.Manifest.cache
 C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket\obj\Debug\net5.0\staticwebassets\SalesSupermarket.StaticWebAssets.xml
 C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket\obj\Debug\net5.0\SalesSupermarket.RazorTargetAssemblyInfo.cache
 C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket\obj\Debug\net5.0\SalesSupermarket.csproj.CopyComplete
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket\obj\Debug\net5.0\SalesSupermarket.dll
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket\obj\Debug\net5.0\ref\SalesSupermarket.dll
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket\obj\Debug\net5.0\SalesSupermarket.pdb
 C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket\obj\Debug\net5.0\SalesSupermarket.genruntimeconfig.cache

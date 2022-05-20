@@ -1,31 +1,61 @@
 {
   "Version": 1,
   "ProjectMap": {
-    "f002abc9-8c3a-4c83-87f6-c543f1bd8708": {
-      "ProjectGuid": "f002abc9-8c3a-4c83-87f6-c543f1bd8708",
-      "DisplayName": "SalesSupermarket",
+    "f8a4a0c5-2622-42a1-b756-01a1a31f5014": {
+      "ProjectGuid": "f8a4a0c5-2622-42a1-b756-01a1a31f5014",
+      "DisplayName": "docker-compose",
       "ColorIndex": 0
     },
-    "7f62fbf7-d60c-49cd-a84d-4903a3c629b0": {
-      "ProjectGuid": "7f62fbf7-d60c-49cd-a84d-4903a3c629b0",
-      "DisplayName": "docker-compose",
+    "365e4e85-ecae-40db-9056-503aebbcd3a5": {
+      "ProjectGuid": "365e4e85-ecae-40db-9056-503aebbcd3a5",
+      "DisplayName": "SalesSupermarket",
       "ColorIndex": 1
-    },
-    "2c7a7b64-fc8f-49ed-97c9-e49bab4f8871": {
-      "ProjectGuid": "2c7a7b64-fc8f-49ed-97c9-e49bab4f8871",
-      "DisplayName": "RegularClientSupermarket",
-      "ColorIndex": 2
-    },
-    "c865e8c6-6b74-4441-a785-3540380826e3": {
-      "ProjectGuid": "c865e8c6-6b74-4441-a785-3540380826e3",
-      "DisplayName": "ProductsSupermarket",
-      "ColorIndex": 3
     },
     "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "883ae6e5-66d0-41e1-8c20-859eb25a8d1e": {
+      "ProjectGuid": "883ae6e5-66d0-41e1-8c20-859eb25a8d1e",
+      "DisplayName": "RegularClientSupermarket",
+      "ColorIndex": 2
+    },
+    "3cd237ab-02e0-4ed7-8a38-c6ff92f595d4": {
+      "ProjectGuid": "3cd237ab-02e0-4ed7-8a38-c6ff92f595d4",
+      "DisplayName": "ProductsSupermarket",
+      "ColorIndex": 3
+    },
+    "9ae8e2da-6454-4560-b752-ced3ff1d7064": {
+      "ProjectGuid": "9ae8e2da-6454-4560-b752-ced3ff1d7064",
+      "DisplayName": "ProductsSupermarket.ApplicationService",
+      "ColorIndex": 4
+    },
+    "44f11215-af73-4da1-95ff-ac88d80bfea9": {
+      "ProjectGuid": "44f11215-af73-4da1-95ff-ac88d80bfea9",
+      "DisplayName": "ProductsSupermarket.Core",
+      "ColorIndex": 5
+    },
+    "2cd3887e-abf2-42f5-9ae9-bf5d5d49e671": {
+      "ProjectGuid": "2cd3887e-abf2-42f5-9ae9-bf5d5d49e671",
+      "DisplayName": "RegularClientSupermarket.ApplicationService",
+      "ColorIndex": 6
+    },
+    "d1e25d93-43f5-4f76-b24a-7c17c42dec68": {
+      "ProjectGuid": "d1e25d93-43f5-4f76-b24a-7c17c42dec68",
+      "DisplayName": "RegularClientSupermarket.Core",
+      "ColorIndex": 7
+    },
+    "e2c217e7-9135-4821-be69-ff5aa68946ae": {
+      "ProjectGuid": "e2c217e7-9135-4821-be69-ff5aa68946ae",
+      "DisplayName": "SalesSupermarket.ApplicationService",
+      "ColorIndex": 8
+    },
+    "1ee039ef-53af-462c-ad56-a32f3f5498ca": {
+      "ProjectGuid": "1ee039ef-53af-462c-ad56-a32f3f5498ca",
+      "DisplayName": "SalesSupermarket.Core",
+      "ColorIndex": 9
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 10
 }

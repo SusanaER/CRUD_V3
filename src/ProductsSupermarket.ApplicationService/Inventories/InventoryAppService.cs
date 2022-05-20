@@ -4,6 +4,7 @@ using ProductsSupermarket.DataAccess.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,19 +19,34 @@ namespace ProductsSupermarket.ApplicationService.Inventories
             _repository = repository;
         }
 
-        public async Task<int> AddInventoryAsync(Inventory inventory)
+        public async Task<string> AddInventoryAsync(Inventory inventory)
         {
-            /*HttpClientHandler clientHandler = new HttpClientHandler();
-            HttpClient brand = new HttpClient(clientHandler);
-            HttpResponseMessage responseOrigin = await brand.GetAsync($"https://host.docker.internal:773/Destination/{journey.OriginId}");
-            responseOrigin.EnsureSuccessStatusCode();
+            try
+            {
+                HttpClientHandler productHandler = new HttpClientHandler();
+                productHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
+                HttpClient product = new HttpClient(productHandler);
+                HttpResponseMessage responseProduct = await product.GetAsync($"https://host.docker.internal:779/Product/{inventory.ProductId}");
+                responseProduct.EnsureSuccessStatusCode();
 
-            string responseOriginBody = await responseOrigin.Content.ReadAsStringAsync();
+                string responseProductBody = await responseProduct.Content.ReadAsStringAsync();
 
-            var originR = Newtonsoft.Json.JsonConvert.DeserializeObject(responseOriginBody);*/
+                var ProductR = Newtonsoft.Json.JsonConvert.DeserializeObject(responseProductBody);
 
-            await _repository.AddAsync(inventory);
-            return inventory.Id;
+                if (ProductR == null)
+                {
+                    return "Error, product not exist";
+                }
+                else
+                {
+                    await _repository.AddAsync(inventory);
+                    return "Successfully added. ID: " + inventory.Id;
+                }
+            }
+            catch (Exception e)
+            {
+                return "Exception caught. " + e;
+            }
         }
 
         public async Task DeleteInventoryAsync(int inventoryId)

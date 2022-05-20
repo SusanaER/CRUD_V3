@@ -10,15 +10,3 @@ C:\Users\Susana\source\repos\Api\SalesSupermarket\SalesSupermarket.Core\obj\Debu
 C:\Users\Susana\source\repos\Api\SalesSupermarket\SalesSupermarket.Core\obj\Debug\net5.0\SalesSupermarket.Core.dll
 C:\Users\Susana\source\repos\Api\SalesSupermarket\SalesSupermarket.Core\obj\Debug\net5.0\ref\SalesSupermarket.Core.dll
 C:\Users\Susana\source\repos\Api\SalesSupermarket\SalesSupermarket.Core\obj\Debug\net5.0\SalesSupermarket.Core.pdb
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.Core\bin\Debug\net5.0\SalesSupermarket.Core.deps.json
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.Core\bin\Debug\net5.0\SalesSupermarket.Core.dll
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.Core\bin\Debug\net5.0\ref\SalesSupermarket.Core.dll
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.Core\bin\Debug\net5.0\SalesSupermarket.Core.pdb
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.Core\obj\Debug\net5.0\SalesSupermarket.Core.csproj.AssemblyReference.cache
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.Core\obj\Debug\net5.0\SalesSupermarket.Core.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.Core\obj\Debug\net5.0\SalesSupermarket.Core.AssemblyInfoInputs.cache
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.Core\obj\Debug\net5.0\SalesSupermarket.Core.AssemblyInfo.cs
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.Core\obj\Debug\net5.0\SalesSupermarket.Core.csproj.CoreCompileInputs.cache
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.Core\obj\Debug\net5.0\SalesSupermarket.Core.dll
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.Core\obj\Debug\net5.0\ref\SalesSupermarket.Core.dll
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\SalesSupermarket.Core\obj\Debug\net5.0\SalesSupermarket.Core.pdb

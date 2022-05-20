@@ -11,7 +11,7 @@ namespace ProductsSupermarket.ApplicationService.Inventories
     {
         Task<List<Inventory>> GetInventoriesAsync();
 
-        Task<int> AddInventoryAsync(Inventory inventory);
+        Task<string> AddInventoryAsync(Inventory inventory);
 
         Task DeleteInventoryAsync(int inventoryId);
 

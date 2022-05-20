@@ -11,7 +11,7 @@ namespace ProductsSupermarket.ApplicationService.Promotions
     {
         Task<List<Promotion>> GetPromotionsAsync();
 
-        Task<int> AddPromotionAsync(Promotion promotion);
+        Task<string> AddPromotionAsync(Promotion promotion);
 
         Task DeletePromotionAsync(int promotionId);
 

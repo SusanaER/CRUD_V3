@@ -365,8 +365,8 @@ C:\Users\Susana\source\repos\Api\RegularClientSupermarket\RegularClientSupermark
 C:\Users\Susana\source\repos\Api\RegularClientSupermarket\RegularClientSupermarket\bin\Debug\net5.0\RegularClientSupermarket.DataAccess.pdb
 C:\Users\Susana\source\repos\Api\RegularClientSupermarket\RegularClientSupermarket\obj\Debug\net5.0\staticwebassets\RegularClientSupermarket.StaticWebAssets.xml
 C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\RegularClientSupermarket\bin\Debug\net5.0\appsettings.Development.json
-C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\RegularClientSupermarket\bin\Debug\net5.0\appsettings.json
 C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\RegularClientSupermarket\bin\Debug\net5.0\RegularClientSupermarket.StaticWebAssets.xml
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\RegularClientSupermarket\bin\Debug\net5.0\appsettings.json
 C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\RegularClientSupermarket\bin\Debug\net5.0\RegularClientSupermarket.exe
 C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\RegularClientSupermarket\bin\Debug\net5.0\RegularClientSupermarket.deps.json
 C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\RegularClientSupermarket\bin\Debug\net5.0\RegularClientSupermarket.runtimeconfig.json

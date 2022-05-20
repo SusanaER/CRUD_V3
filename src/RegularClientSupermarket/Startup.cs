@@ -27,13 +27,15 @@ namespace RegularClientSupermarket
             Configuration = configuration;
         }
 
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            string connectionString = "server=regularclients-database;port=3306;database=regularclientsupermarket;user=root;password=root;CharSet=utf8;Sslmode=none;Pooling=false;AllowPublicKeyRetrieval=true";
-            
+            string connectionString = Configuration.GetConnectionString("Docker");
+
             services.AddDbContext<RegularClientSupermarketContext>(options =>
                 options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
@@ -43,6 +45,17 @@ namespace RegularClientSupermarket
             services.AddControllers()
             .AddJsonOptions(o => o.JsonSerializerOptions
                 .ReferenceHandler = ReferenceHandler.Preserve);
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: MyAllowSpecificOrigins,
+                                  builder =>
+                                  {
+                                      builder.SetIsOriginAllowed(origin => new Uri(origin).Host == "localhost")
+                                      .AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
+                                  });
+            });
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "RegularClientSupermarket", Version = "v1" });
@@ -50,7 +63,7 @@ namespace RegularClientSupermarket
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, RegularClientSupermarketContext db)
         {
             if (env.IsDevelopment())
             {
@@ -65,10 +78,13 @@ namespace RegularClientSupermarket
 
             app.UseAuthorization();
 
+            app.UseCors(MyAllowSpecificOrigins);
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+            db.Database.Migrate();
         }
     }
 }

@@ -11,7 +11,7 @@ namespace SalesSupermarket.ApplicationService.Sales
     {
         Task<List<Sale>> GetSalesAsync();
 
-        Task<int> AddSaleAsync(Sale sale);
+        Task<string> AddSaleAsync(Sale sale);
 
         Task DeleteSaleAsync(int saleId);
 

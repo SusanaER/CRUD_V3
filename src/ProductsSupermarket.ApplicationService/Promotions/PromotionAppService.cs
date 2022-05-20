@@ -4,6 +4,7 @@ using ProductsSupermarket.DataAccess.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,19 +19,35 @@ namespace ProductsSupermarket.ApplicationService.Promotions
             _repository = repository;
         }
 
-        public async Task<int> AddPromotionAsync(Promotion promotion)
+        public async Task<string> AddPromotionAsync(Promotion promotion)
         {
-            /*HttpClientHandler clientHandler = new HttpClientHandler();
-            HttpClient brand = new HttpClient(clientHandler);
-            HttpResponseMessage responseOrigin = await brand.GetAsync($"https://host.docker.internal:773/Destination/{journey.OriginId}");
-            responseOrigin.EnsureSuccessStatusCode();
+            try
+            {
+                HttpClientHandler productHandler = new HttpClientHandler();
+                productHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
+                HttpClient product = new HttpClient(productHandler);
+                HttpResponseMessage responseProduct = await product.GetAsync($"https://host.docker.internal:779/Product/{promotion.ProductId}");
+                responseProduct.EnsureSuccessStatusCode();
 
-            string responseOriginBody = await responseOrigin.Content.ReadAsStringAsync();
+                string responseProductBody = await responseProduct.Content.ReadAsStringAsync();
 
-            var originR = Newtonsoft.Json.JsonConvert.DeserializeObject(responseOriginBody);*/
+                var ProductR = Newtonsoft.Json.JsonConvert.DeserializeObject(responseProductBody);
 
-            await _repository.AddAsync(promotion);
-            return promotion.Id;
+                if (ProductR == null)
+                {
+                    return "Error, product not exist";
+                }
+                else
+                {
+                    await _repository.AddAsync(promotion);
+                    return "Successfully added. ID: " + promotion.Id;
+                }
+            }
+            catch (Exception e)
+            {
+                return "Exception caught. " + e;
+            }
+
         }
 
         public async Task DeletePromotionAsync(int promotionId)

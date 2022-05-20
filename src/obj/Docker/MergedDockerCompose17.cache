@@ -1,0 +1,69 @@
+services:
+  regularclient-database:
+    environment:
+      MYSQL_DATABASE: regularclientsupermarket
+      MYSQL_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: root
+    image: mysql:8.0.22
+    ports:
+    - published: 3366
+      target: 3306
+    restart: always
+    volumes:
+    - regularclient-datafiles:/var/lib/mysql:rw
+  regularclientsupermarket:
+    build:
+      context: C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src
+      dockerfile: RegularClientSupermarket/Dockerfile
+    depends_on:
+      regularclient-database:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: regularclientsupermarket
+    ports:
+    - published: 5000
+      target: 80
+    - published: 777
+      target: 443
+    restart: always
+  sales-database:
+    environment:
+      MYSQL_DATABASE: salesupermarket
+      MYSQL_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: root
+    image: mysql:8.0.22
+    ports:
+    - published: 3366
+      target: 3306
+    restart: always
+    volumes:
+    - sales-datafiles:/var/lib/mysql:rw
+  salessupermarket:
+    build:
+      context: C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src
+      dockerfile: SalesSupermarket/Dockerfile
+    depends_on:
+      sales-database:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: salessupermarket
+    ports:
+    - published: 5000
+      target: 80
+    - target: 80
+    - published: 777
+      target: 443
+    - target: 443
+    restart: always
+    volumes:
+    - C:\Users\Susana\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+version: '3.4'
+volumes:
+  products-datafiles: {}
+  regularclient-datafiles: {}
+  sales-datafiles: {}

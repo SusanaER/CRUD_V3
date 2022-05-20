@@ -11,7 +11,7 @@ namespace ProductsSupermarket.ApplicationService.Products
     {
         Task<List<Product>> GetProductsAsync();
 
-        Task<int> AddProductAsync(Product product);
+        Task<string> AddProductAsync(Product product);
 
         Task DeleteProductAsync(int productId);
 

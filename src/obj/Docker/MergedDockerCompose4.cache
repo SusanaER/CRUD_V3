@@ -1,52 +1,29 @@
 services:
-  products-database:
+  sales-database:
     environment:
-      MYSQL_DATABASE: productsupermarket
+      MYSQL_DATABASE: microservicesale
       MYSQL_PASSWORD: root
       MYSQL_ROOT_PASSWORD: root
       MYSQL_USER: root
     image: mysql:8.0.22
     ports:
-    - published: 3368
+    - published: 3366
       target: 3306
     restart: always
     volumes:
     - sales-datafiles:/var/lib/mysql:rw
-  productssupermarket:
+  sales.microservice:
     build:
       context: C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src
-      dockerfile: ProductsSupermarket/Dockerfile
+      dockerfile: Sales.Microservice/Dockerfile
+    depends_on:
+      sales-database:
+        condition: service_started
     environment:
       ASPNETCORE_ENVIRONMENT: Development
-    image: productssupermarket
+    image: salesmicroservice
     ports:
-    - published: 8001
-      target: 80
-    - published: 777
-      target: 443
-    restart: always
-  regularclients-database:
-    environment:
-      MYSQL_DATABASE: regularclientsupermarket
-      MYSQL_PASSWORD: root
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_USER: root
-    image: mysql:8.0.22
-    ports:
-    - published: 3367
-      target: 3306
-    restart: always
-    volumes:
-    - sales-datafiles:/var/lib/mysql:rw
-  regularclientsupermarket:
-    build:
-      context: C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src
-      dockerfile: RegularClientSupermarket/Dockerfile
-    environment:
-      ASPNETCORE_ENVIRONMENT: Development
-    image: regularclientsupermarket
-    ports:
-    - published: 8000
+    - published: 5000
       target: 80
     - published: 777
       target: 443
@@ -60,30 +37,12 @@ services:
       ASPNETCORE_URLS: https://+:443;http://+:80
     image: salessupermarket
     ports:
-    - published: 5000
-      target: 80
     - target: 80
-    - published: 777
-      target: 443
     - target: 443
-    restart: always
     volumes:
     - C:\Users\Susana\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
-    - C:\Users\Susana\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
-  salessupermarket-database:
-    environment:
-      MYSQL_DATABASE: salesupermarket
-      MYSQL_PASSWORD: root
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_USER: root
-    image: mysql:8.0.22
-    ports:
-    - published: 3366
-      target: 3306
-    restart: always
-    volumes:
-    - sales-datafiles:/var/lib/mysql:rw
 version: '3.4'
 volumes:
-  catalogs-datafiles: {}
+  products-datafiles: {}
+  regularclient-datafiles: {}
   sales-datafiles: {}
