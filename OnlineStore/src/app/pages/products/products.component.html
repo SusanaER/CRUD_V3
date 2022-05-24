@@ -1,0 +1,18 @@
+<body>
+    <div *ngFor="let item of getListData" class="justify-content-center container col-md-4 col-sm-6">
+        <div *ngFor="let p of product[item]" class="card p-3 bg-white space">
+            <div class="about-product text-center mt-2"><img src="{{p.image}}" width="300px" height="300px">
+                <div>
+                    <h4>{{p.name}}</h4>
+                </div>
+            </div>
+            <div class="stats mt-2">
+                <div class="d-flex justify-content-between p-price"><span>{{p.description}}</span></div>
+                <div class="d-flex justify-content-between p-price"><b>Brand</b><span>{{p.brandId}}</span></div>
+                <div class="d-flex justify-content-between p-price"><b>Category</b><span>{{p.categorysId}}</span></div>
+            </div>
+            <div class="d-flex justify-content-between total font-weight-bold mt-4"><b>Price</b><b>${{p.precio}}</b></div>
+            <button class="button">Add to card</button>
+        </div>
+    </div>
+</body>

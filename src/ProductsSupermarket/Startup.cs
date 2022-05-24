@@ -48,15 +48,7 @@ namespace ProductsSupermarket
             services.AddDbContext<ProductsSupermarketContex>(options =>
                 options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
-            services.AddCors(options =>
-            {
-                options.AddPolicy(name: MyAllowSpecificOrigins,
-                                  builder =>
-                                  {
-                                      builder.SetIsOriginAllowed(origin => new Uri(origin).Host == "localhost")
-                                      .AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
-                                  });
-            });
+            services.AddCors();
 
             services.AddTransient<IProductAppService, ProductAppService>();
             services.AddTransient<IBrandAppService, BrandAppService>();
@@ -97,7 +89,12 @@ namespace ProductsSupermarket
             app.UseAuthentication();
             app.UseAuthorization();
 
-            app.UseCors(MyAllowSpecificOrigins);
+            app.UseCors(x => x
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .SetIsOriginAllowed(origin => true) // allow any origin
+                .AllowCredentials()); // allow credentials
+
 
             app.UseEndpoints(endpoints =>
             {

@@ -1,0 +1,19 @@
+.card {
+    width: 444px;
+    border-width: 3px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.space{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button{
+    background-color: #563d7c;
+    border-radius: 10px;
+    color: white;
+    border-color: #563d7c;
+    height: 35px;
+}
