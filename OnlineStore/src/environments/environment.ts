@@ -11,6 +11,7 @@ export const environment = {
   BRAND_URL: "https://localhost:779/Brand/",
   REGULARCLIENT_URL: "https://localhost:778/RegularClient/",
   SALE_URL: "https://localhost:777/Sale/",
+  PAGE_URL: "http://localhost:4200/"
 };
 
 /*

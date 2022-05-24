@@ -7,13 +7,17 @@ import { ProductsComponent } from './pages/products/products.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RClientComponent } from './pages/r-client/r-client.component';
 import { ObjToArrayPipe } from './commun/pipes/objToArray.pipe';
+import { SaleComponent } from './pages/sale/sale.component';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductsComponent,
     RClientComponent,
-    ObjToArrayPipe
+    ObjToArrayPipe,
+    SaleComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
