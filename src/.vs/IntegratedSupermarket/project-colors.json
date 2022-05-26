@@ -55,7 +55,12 @@
       "ProjectGuid": "1ee039ef-53af-462c-ad56-a32f3f5498ca",
       "DisplayName": "SalesSupermarket.Core",
       "ColorIndex": 9
+    },
+    "30eecce6-7bdd-48b4-94be-561e3a39ef88": {
+      "ProjectGuid": "30eecce6-7bdd-48b4-94be-561e3a39ef88",
+      "DisplayName": "RegularClientSupermarket.DataAccess",
+      "ColorIndex": 10
     }
   },
-  "NextColorIndex": 10
+  "NextColorIndex": 11
 }

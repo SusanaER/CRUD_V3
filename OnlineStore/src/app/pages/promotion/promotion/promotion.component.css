@@ -1,0 +1,87 @@
+form{
+    text-align: center;
+}
+
+.formInputs{
+    margin-top: 15px;
+    margin-left: 15px;
+    border-radius: 3px;
+    color: #563d7c;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    border-color: #563d7c;
+}
+
+.buttonCreate{
+    background-color: #563d7c;
+    border-radius: 10px;
+    color: white;
+    border-color: #563d7c;
+    height: 35px;
+    margin-top: 15px;
+    width: 150px;
+}
+
+.card {
+    width: 500px;
+    border-width: 3px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.space{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button{
+    background-color: #563d7c;
+    border-radius: 10px;
+    color: white;
+    border-color: #563d7c;
+    height: 35px;
+}
+
+.buttonUpdate{
+    background-color: #52b4de;
+    border-radius: 10px;
+    color: white;
+    border-color: #52b4de;
+    height: 35px;
+    margin-top: 15px;
+}
+
+.buttonDelete{
+    background-color: #de5283;
+    border-radius: 10px;
+    color: white;
+    border-color: #de5283;
+    height: 35px;
+    margin-top: 15px;
+}
+
+.button-size{
+    font-size: large;
+    font-weight: bold;
+    color: rgb(49, 49, 49);
+    width: 100%;
+}
+
+.title{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 3.2em;
+    line-height: 48px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+       color: #5543ca;
+      background: #5543ca;
+      background: -moz-linear-gradient(left,#f4524d  0%,#5543ca 100%) !important;
+      background: -webkit-linear-gradient(left,#f4524d  0%,#5543ca 100%) !important;
+      background: linear-gradient(to right,#f4524d  0%,#5543ca  100%) !important;
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+}

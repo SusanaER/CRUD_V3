@@ -1,0 +1,21 @@
+<body>
+    <h1 class="title">Products</h1>
+    <form [formGroup]="addForm" (ngSubmit)="add()">
+        <input type="text" formControlName="productId" class="formInputs" placeholder="Product">
+        <input type="text" formControlName="description" class="formInputs" placeholder="Description">
+        <input type="text" formControlName="discounts" class="formInputs" placeholder="Discounts">
+        <button class="buttonCreate formInputs" type="submit">Create</button>
+    </form>
+    <div *ngFor="let item of getListData" class="justify-content-center container col-md-4 col-sm-6">
+        <div *ngFor="let p of promotion[item]" class="card p-3 bg-white space">
+            <div class="stats mt-2">
+                <div class="d-flex justify-content-between p-price"><b>Product</b><span>{{p.productId}}</span></div>
+                <div class="d-flex justify-content-between p-price"><b>#ID: </b><span>{{p.id}}</span></div>
+                <div class="d-flex justify-content-between p-price"><b>Description</b><span>{{p.description}}</span></div>
+                <div class="d-flex justify-content-between p-price"><b>Discount</b><span>{{p.discounts}}</span></div>
+            </div>
+            <button type="button" class="buttonUpdate" (click)="update(p.id)">Update</button>
+            <button type="button" class="buttonDelete" (click)="delete(p.id)">Delete</button>
+        </div>
+    </div>
+</body>

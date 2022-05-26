@@ -11,7 +11,7 @@ export class SaleComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    if(localStorage.getItem("login")){
+    if(localStorage.getItem("login") && localStorage.getItem("productId")){
       console.log("Esta loggin")
     }else{
       window.location.assign(e.PAGE_URL + 'login');

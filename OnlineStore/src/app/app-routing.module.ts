@@ -1,17 +1,31 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { BrandComponent } from './pages/brand/brand.component';
+import { UpdateBrandComponent } from './pages/brand/update-brand/update-brand.component';
+import { CategoryComponent } from './pages/category/category.component';
+import { UpdateCategoryComponent } from './pages/category/update-category/update-category.component';
 import { LoginComponent } from './pages/login/login.component';
 import { ProductsComponent } from './pages/products/products.component';
+import { UpdateProductComponent } from './pages/products/update-product/update-product.component';
+import { PromotionComponent } from './pages/promotion/promotion/promotion.component';
+import { UpdatePromotionComponent } from './pages/promotion/update-promotion/update-promotion.component';
 import { RClientComponent } from './pages/r-client/r-client.component';
 import { SaleComponent } from './pages/sale/sale.component';
 
 const routes: Routes = [
-  {path: '', pathMatch: 'full', redirectTo: 'products'},
+  {path: '', pathMatch: 'full', redirectTo: 'login'},
   {path: 'products', component: ProductsComponent},
+  {path: 'updateProduct', component: UpdateProductComponent},
   {path: 'rClients', component: RClientComponent},
   {path: 'login', component: LoginComponent},
   {path: 'sale', component: SaleComponent},
-  {path: '**', redirectTo: 'products'}
+  {path: 'brand', component: BrandComponent},
+  {path: 'updateBrand', component: UpdateBrandComponent},
+  {path: 'category', component: CategoryComponent},
+  {path: 'updateCategory', component: UpdateCategoryComponent},
+  {path: 'promotion', component: PromotionComponent},
+  {path: 'updatePromotion', component: UpdatePromotionComponent},
+  {path: '**', redirectTo: 'login'}
 ];
 
 @NgModule({

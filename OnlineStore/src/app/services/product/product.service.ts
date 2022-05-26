@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { map, Observable, catchError } from 'rxjs';
 import { ProductModel } from 'src/app/commun/models/product.model';
 import { environment as e } from '../../../environments/environment';
@@ -30,8 +30,8 @@ export class ProductService {
     );
   }
 
-  public updateProduct(id: number, name: string, description: string, image: string, precio: string, brandId: number, categoryId: number): any {
-    var content = {id, name, description, image, precio, brandId, categoryId}
+  public updateProduct(id: string, name: string, description: string, image: string, precio: string, brandId: string, categorysId: string): any {
+    var content = {id, name, description, image, precio, brandId, categorysId}
     return this.https.put(e.PRODUCT_URL, content).pipe(
       map(item => {
         return (console.log(item));
@@ -47,9 +47,12 @@ export class ProductService {
     );
   }
 
-  public addProduct( name: string, description: string, image: string, precio: string, brandId: number, categoryId: number): any{
-    var content = {name, description, image, precio, brandId, categoryId}
-    return this.https.post(e.PRODUCT_URL, content).pipe(
+  public addProduct( name: string, description: string, image: string, precio: string, brandId: string, categorysId: string): any{
+    var content = {name, description, image, precio, brandId, categorysId};
+    const httpOptions = {
+      headers: new HttpHeaders({'Content-Type': 'application/json'})
+    }
+    return this.https.post(e.PRODUCT_URL, content, httpOptions).pipe(
       map(item => {
         return (console.log(item));
       })

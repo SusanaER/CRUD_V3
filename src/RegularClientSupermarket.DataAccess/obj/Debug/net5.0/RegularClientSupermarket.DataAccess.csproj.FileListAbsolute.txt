@@ -16,3 +16,21 @@ C:\Users\Susana\source\repos\Api\RegularClientSupermarket\RegularClientSupermark
 C:\Users\Susana\source\repos\Api\RegularClientSupermarket\RegularClientSupermarket.DataAccess\obj\Debug\net5.0\ref\RegularClientSupermarket.DataAccess.dll
 C:\Users\Susana\source\repos\Api\RegularClientSupermarket\RegularClientSupermarket.DataAccess\obj\Debug\net5.0\RegularClientSupermarket.DataAccess.pdb
 C:\Users\Susana\source\repos\Api\RegularClientSupermarket\RegularClientSupermarket.DataAccess\obj\Debug\net5.0\RegularClientSupermarket.DataAccess.genruntimeconfig.cache
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\RegularClientSupermarket.DataAccess\bin\Debug\net5.0\RegularClientSupermarket.DataAccess.deps.json
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\RegularClientSupermarket.DataAccess\bin\Debug\net5.0\RegularClientSupermarket.DataAccess.runtimeconfig.json
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\RegularClientSupermarket.DataAccess\bin\Debug\net5.0\RegularClientSupermarket.DataAccess.runtimeconfig.dev.json
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\RegularClientSupermarket.DataAccess\bin\Debug\net5.0\RegularClientSupermarket.DataAccess.dll
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\RegularClientSupermarket.DataAccess\bin\Debug\net5.0\ref\RegularClientSupermarket.DataAccess.dll
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\RegularClientSupermarket.DataAccess\bin\Debug\net5.0\RegularClientSupermarket.DataAccess.pdb
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\RegularClientSupermarket.DataAccess\bin\Debug\net5.0\RegularClientSupermarket.Core.dll
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\RegularClientSupermarket.DataAccess\bin\Debug\net5.0\RegularClientSupermarket.Core.pdb
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\RegularClientSupermarket.DataAccess\obj\Debug\net5.0\RegularClientSupermarket.DataAccess.csproj.AssemblyReference.cache
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\RegularClientSupermarket.DataAccess\obj\Debug\net5.0\RegularClientSupermarket.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\RegularClientSupermarket.DataAccess\obj\Debug\net5.0\RegularClientSupermarket.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\RegularClientSupermarket.DataAccess\obj\Debug\net5.0\RegularClientSupermarket.DataAccess.AssemblyInfo.cs
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\RegularClientSupermarket.DataAccess\obj\Debug\net5.0\RegularClientSupermarket.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\RegularClientSupermarket.DataAccess\obj\Debug\net5.0\RegularClientSupermarket.DataAccess.csproj.CopyComplete
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\RegularClientSupermarket.DataAccess\obj\Debug\net5.0\RegularClientSupermarket.DataAccess.dll
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\RegularClientSupermarket.DataAccess\obj\Debug\net5.0\ref\RegularClientSupermarket.DataAccess.dll
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\RegularClientSupermarket.DataAccess\obj\Debug\net5.0\RegularClientSupermarket.DataAccess.pdb
+C:\Users\Susana\Documents\Punto Singular\CRUD_V3\src\RegularClientSupermarket.DataAccess\obj\Debug\net5.0\RegularClientSupermarket.DataAccess.genruntimeconfig.cache

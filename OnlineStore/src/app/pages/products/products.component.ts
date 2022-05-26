@@ -4,6 +4,9 @@ import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ProductService } from 'src/app/services/product/product.service';
 import { environment as e } from 'src/environments/environment';
+import Swal from 'sweetalert2';
+import { BrandModel } from 'src/app/commun/models/brand.model';
+import { BrandService } from 'src/app/services/brand/brand.service';
 
 @Component({
   selector: 'app-products',
@@ -13,12 +16,30 @@ import { environment as e } from 'src/environments/environment';
 export class ProductsComponent implements OnInit, OnDestroy {
   productSubs!: Subscription;
   product: any = [];
-  AddForm !: FormGroup;
+  addForm !: FormGroup;
+  brand: any = [];
+  brandSelected!: string;
+  brandSubs!: Subscription;
 
-  constructor(private productService: ProductService, private router: Router, private formBuilder: FormBuilder ) { }
+  constructor(private productService: ProductService, private brandService: BrandService, private router: Router, private formBuilder: FormBuilder ) { }
   
   ngOnInit(): void {
+    localStorage.removeItem("id");
+    if(localStorage.getItem("login")){
+      this.getBrand();
       this.getData();
+      this.addForm = this.formBuilder.group({
+        name: ["", [Validators.required]],
+        description: ["", [Validators.required]],
+        image: ["", [Validators.required]],
+        precio: ["", [Validators.required]],
+        brandId: ["", [Validators.required]],
+        categorysId: ["", [Validators.required]],
+      });
+      this.brandSelected = "1";
+    }else{
+      window.location.assign(e.PAGE_URL + 'login');
+    }
   }
 
   getData(){
@@ -31,13 +52,65 @@ export class ProductsComponent implements OnInit, OnDestroy {
     return Object.keys(this.product)
   }
 
+  add(){
+      var name = this.addForm.getRawValue().name;
+      var description = this.addForm.getRawValue().description;
+      var image = this.addForm.getRawValue().image;
+      var precio = this.addForm.getRawValue().precio;
+      var brandId = this.addForm.getRawValue().brandId;
+      var categorysId = this.addForm.getRawValue().categorysId;
+      if(name === "" || description === "" || image === "" 
+      || precio === "" || brandId === "" || categorysId === ""){
+        Swal.fire({
+          title: 'Missing information',
+          icon: 'error',
+          confirmButtonText: 'Ok',
+        });
+      }else{
+        this.productSubs = this.productService.addProduct(name, description, image, precio, brandId, categorysId).subscribe();
+        Swal.fire({
+          title: 'Product added',
+          icon: 'success',
+          confirmButtonText: 'Ok',
+        });
+        setTimeout(function(){
+          window.location.reload();
+        }, 2);
+      }
+    }
+
   moveToSale(id: string){
     localStorage.setItem("productId", id);
     window.location.assign(e.PAGE_URL + 'sale');
     
   }
 
+  update(id: string){
+    localStorage.setItem("productId", id);
+    window.location.assign(e.PAGE_URL + 'updateProduct');
+  }
+
+  delete(id: string, name: string){
+    this.productService.deleteProduct(id).subscribe();
+    window.location.reload();
+    Swal.fire({
+      title: name + ' deleted',
+      icon: 'success',
+      confirmButtonText: 'Ok',
+    });
+  }
+
   ngOnDestroy(): void {
     this.productSubs.unsubscribe();
+  }
+
+  getBrand(){
+    this.brandSubs = this.brandService.getBrand().subscribe(respuesta => {
+      this.brand = respuesta;
+    })
+  }
+
+  get getListBrand(){
+    return Object.keys(this.brand)
   }
 }

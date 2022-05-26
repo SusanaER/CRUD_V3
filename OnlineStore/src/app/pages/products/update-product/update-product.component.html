@@ -1,0 +1,37 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<section class="get-in-touch">
+   <h1 class="title">UPDATE PRODUCT</h1>
+   <form [formGroup]="updateForm" class="contact-form row" (ngSubmit)="update()">
+      <div class="form-field col-lg-6">
+         <input id="name" formControlName="name" class="input-text js-input" type="text" required>
+         <label class="label" for="name">Name</label>
+      </div>
+      <div class="form-field col-lg-6 ">
+        <input id="company" formControlName="precio" class="input-text js-input" type="text" required>
+        <label class="label" for="company">Price</label>
+     </div>
+      <div class="form-field col-lg-12 ">
+         <input id="email" formControlName="image" class="input-text js-input" type="email" required>
+         <label class="label" for="email">Image URL</label>
+      </div>
+       <div class="form-field col-lg-6 ">
+         <input id="phone" formControlName="brandId" class="input-text js-input" type="text" required>
+         <label class="label" for="phone">Brand</label>
+      </div>
+      <div class="form-field col-lg-6 ">
+        <input id="phone" formControlName="categorysId" class="input-text js-input" type="text" required>
+        <label class="label" for="phone">Category</label>
+     </div>
+      <div class="form-field col-lg-12">
+         <input id="message" formControlName="description" class="input-text js-input" type="text" required>
+         <label class="label" for="message">Description</label>
+      </div>
+      <div class="form-field col-lg-12">
+         <input class="submit-btn" type="submit" value="UPDATE">
+      </div>
+   </form>
+</section>

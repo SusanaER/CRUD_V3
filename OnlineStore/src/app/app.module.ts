@@ -9,7 +9,13 @@ import { RClientComponent } from './pages/r-client/r-client.component';
 import { ObjToArrayPipe } from './commun/pipes/objToArray.pipe';
 import { SaleComponent } from './pages/sale/sale.component';
 import { LoginComponent } from './pages/login/login.component';
-
+import { UpdateProductComponent } from './pages/products/update-product/update-product.component';
+import { BrandComponent } from './pages/brand/brand.component';
+import { UpdateBrandComponent } from './pages/brand/update-brand/update-brand.component';
+import { CategoryComponent } from './pages/category/category.component';
+import { UpdateCategoryComponent } from './pages/category/update-category/update-category.component';
+import { PromotionComponent } from './pages/promotion/promotion/promotion.component';
+import { UpdatePromotionComponent } from './pages/promotion/update-promotion/update-promotion.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +23,14 @@ import { LoginComponent } from './pages/login/login.component';
     RClientComponent,
     ObjToArrayPipe,
     SaleComponent,
-    LoginComponent
+    LoginComponent,
+    UpdateProductComponent,
+    BrandComponent,
+    UpdateBrandComponent,
+    CategoryComponent,
+    UpdateCategoryComponent,
+    PromotionComponent,
+    UpdatePromotionComponent
   ],
   imports: [
     BrowserModule,

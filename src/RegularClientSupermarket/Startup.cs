@@ -46,15 +46,7 @@ namespace RegularClientSupermarket
             .AddJsonOptions(o => o.JsonSerializerOptions
                 .ReferenceHandler = ReferenceHandler.Preserve);
 
-            services.AddCors(options =>
-            {
-                options.AddPolicy(name: MyAllowSpecificOrigins,
-                                  builder =>
-                                  {
-                                      builder.SetIsOriginAllowed(origin => new Uri(origin).Host == "localhost")
-                                      .AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
-                                  });
-            });
+            services.AddCors();
 
             services.AddSwaggerGen(c =>
             {
@@ -78,7 +70,11 @@ namespace RegularClientSupermarket
 
             app.UseAuthorization();
 
-            app.UseCors(MyAllowSpecificOrigins);
+            app.UseCors(x => x
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .SetIsOriginAllowed(origin => true) // allow any origin
+                .AllowCredentials()); // allow credentials
 
             app.UseEndpoints(endpoints =>
             {

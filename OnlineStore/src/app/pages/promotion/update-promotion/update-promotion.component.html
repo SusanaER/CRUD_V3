@@ -1,0 +1,25 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<section class="get-in-touch">
+   <h1 class="title">UPDATE PROMOTION</h1>
+   <form [formGroup]="updateForm" class="contact-form row" (ngSubmit)="update()">
+      <div class="form-field col-lg-6">
+         <input id="name" formControlName="productId" class="input-text js-input" type="text" required>
+         <label class="label" for="name">Product</label>
+      </div>
+      <div class="form-field col-lg-6 ">
+        <input id="company" formControlName="description" class="input-text js-input" type="text" required>
+        <label class="label" for="company">Description</label>
+     </div>
+      <div class="form-field col-lg-12 ">
+         <input id="email" formControlName="discounts" class="input-text js-input" type="text" required>
+         <label class="label" for="email">Discounts</label>
+      </div>
+      <div class="form-field col-lg-12">
+         <input class="submit-btn" type="submit" value="UPDATE">
+      </div>
+   </form>
+</section>

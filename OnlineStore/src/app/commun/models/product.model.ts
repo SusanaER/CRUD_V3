@@ -1,9 +1,9 @@
 export interface ProductModel{
-    id: number;
+    id: string;
     name: string;
     description: string;
     image: string;
-    precio: number;
-    brandId: number;
-    categorysId: number;
+    precio: string;
+    brandId: string;
+    categorysId: string;
 }

@@ -6,41 +6,23 @@
     <div class="row">
         <div class="col-md-6 login-form-1">
             <h3>Login</h3>
-            
+            <form [formGroup]="loginForm" id="login-form" autocomplete="off" class="form space" (ngSubmit)="login()">
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Your Email *" value="" />
+                    <input type="text" formControlName="user" class="form-control" placeholder="User *" value="" />
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control" placeholder="Your Password *" value="" />
+                    <input type="password" formControlName="password" class="form-control" placeholder="Password *" value="" />
                 </div>
                 <div class="form-group">
-                    <input type="submit" class="btnSubmit" value="Login" />
+                    <input type="submit" [disabled]="loginForm.invalid" class="btnSubmit" value="Login" />
                 </div>
-                <div class="form-group">
-                    <a href="#" class="btnForgetPwd">Forget Password?</a>
-                </div>
-            
+            </form>
         </div>
         <div class="col-md-6 login-form-2">
             <div class="login-logo">
                 <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
             </div>
-            <form>
-                <h3>Register</h3>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Your Email *" value="" />
-                </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" placeholder="Your Password *" value="" />
-                </div>
-                <div class="form-group">
-                    <input type="submit" class="btnSubmit" value="Login" />
-                </div>
-                <div class="form-group">
-
-                    <a href="#" class="btnForgetPwd" value="Login">Forget Password?</a>
-                </div>
-            </form>
+            <img src="../../../assets/images/laptop.png" style="height: 250px; margin-left: 20%;" alt=""/>
         </div>
     </div>
 </div>
