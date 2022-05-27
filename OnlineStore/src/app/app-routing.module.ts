@@ -10,13 +10,15 @@ import { UpdateProductComponent } from './pages/products/update-product/update-p
 import { PromotionComponent } from './pages/promotion/promotion/promotion.component';
 import { UpdatePromotionComponent } from './pages/promotion/update-promotion/update-promotion.component';
 import { RClientComponent } from './pages/r-client/r-client.component';
+import { UpdateRClientComponent } from './pages/r-client/update-rclient/update-rclient.component';
 import { SaleComponent } from './pages/sale/sale.component';
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'login'},
   {path: 'products', component: ProductsComponent},
   {path: 'updateProduct', component: UpdateProductComponent},
-  {path: 'rClients', component: RClientComponent},
+  {path: 'clients', component: RClientComponent},
+  {path: 'updateClient', component: UpdateRClientComponent},
   {path: 'login', component: LoginComponent},
   {path: 'sale', component: SaleComponent},
   {path: 'brand', component: BrandComponent},

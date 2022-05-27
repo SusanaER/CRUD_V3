@@ -1,1 +1,27 @@
-<p>r-client works!</p>
+<body>
+    <h1 class="title">Regular Clients</h1>
+    <form [formGroup]="addForm" (ngSubmit)="add()">
+        <input type="text" formControlName="firstName" class="formInputs" placeholder="First Name">
+        <input type="text" formControlName="lastName" class="formInputs" placeholder="Last Name">
+        <input type="datetime-local" formControlName="dateOfBirth" class="formInputs" placeholder="Date Of Birth">
+        <input type="text" formControlName="address" class="formInputs" placeholder="Address">
+        <input type="text" formControlName="postalCode" class="formInputs" placeholder="Postal Code">
+        <input type="text" formControlName="phoneNumber" class="formInputs" placeholder="Phone Number">
+        <button class="buttonCreate formInputs" type="submit">Create</button>
+    </form>
+    <div *ngFor="let item of getListData" class="justify-content-center container col-md-4 col-sm-6">
+        <div *ngFor="let p of client[item]" class="card p-3 bg-white space">
+            <div class="stats mt-2">
+                <div class="d-flex justify-content-between p-price"><h4>{{p.firstName}} {{p.lastName}}</h4></div>
+                <div class="d-flex justify-content-between p-price">#ID: <b>{{p.id}}</b></div>
+                <div class="d-flex justify-content-between p-price"><b>Date of birth</b><span>{{p.dateOfBirth}}</span></div>
+                <div class="d-flex justify-content-between p-price"><b>Adress</b><span>{{p.address}}</span></div>
+                <div class="d-flex justify-content-between p-price"><b>Postal Code</b><span>{{p.postalCode}}</span></div>
+                <div class="d-flex justify-content-between p-price"><b>Phone Number</b><span>{{p.phoneNumber}}</span></div>
+            </div>
+            <button type="button" class="buttonUpdate" (click)="update(p.id)">Update</button>
+            <button type="button" class="buttonDelete" (click)="delete(p.id, p.firstName)">Delete</button>
+        </div>
+    </div>
+</body>
+

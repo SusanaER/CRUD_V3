@@ -67,7 +67,7 @@ export class PromotionComponent implements OnInit {
         });
         setTimeout(function(){
           window.location.reload();
-        }, 5);
+        }, 7);
       }
     }
 

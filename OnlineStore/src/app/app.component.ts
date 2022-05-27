@@ -40,5 +40,9 @@ export class AppComponent {
   category(){
     window.location.assign(e.PAGE_URL+'category');
   }
+
+  clients(){
+    window.location.assign(e.PAGE_URL+'clients');
+  }
 }
 

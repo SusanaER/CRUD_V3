@@ -16,6 +16,7 @@ import { CategoryComponent } from './pages/category/category.component';
 import { UpdateCategoryComponent } from './pages/category/update-category/update-category.component';
 import { PromotionComponent } from './pages/promotion/promotion/promotion.component';
 import { UpdatePromotionComponent } from './pages/promotion/update-promotion/update-promotion.component';
+import { UpdateRClientComponent } from './pages/r-client/update-rclient/update-rclient.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +31,8 @@ import { UpdatePromotionComponent } from './pages/promotion/update-promotion/upd
     CategoryComponent,
     UpdateCategoryComponent,
     PromotionComponent,
-    UpdatePromotionComponent
+    UpdatePromotionComponent,
+    UpdateRClientComponent
   ],
   imports: [
     BrowserModule,
