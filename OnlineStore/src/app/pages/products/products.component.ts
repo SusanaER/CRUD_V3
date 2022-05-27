@@ -7,6 +7,8 @@ import { environment as e } from 'src/environments/environment';
 import Swal from 'sweetalert2';
 import { BrandModel } from 'src/app/commun/models/brand.model';
 import { BrandService } from 'src/app/services/brand/brand.service';
+import {formatDate} from '@angular/common';
+import { SaleService } from 'src/app/services/sale/sale.service';
 
 @Component({
   selector: 'app-products',
@@ -21,7 +23,7 @@ export class ProductsComponent implements OnInit, OnDestroy {
   brandSelected!: string;
   brandSubs!: Subscription;
 
-  constructor(private productService: ProductService, private brandService: BrandService, private router: Router, private formBuilder: FormBuilder ) { }
+  constructor(private saleService: SaleService,private productService: ProductService, private brandService: BrandService, private router: Router, private formBuilder: FormBuilder ) { }
   
   ngOnInit(): void {
     localStorage.removeItem("id");
@@ -35,6 +37,7 @@ export class ProductsComponent implements OnInit, OnDestroy {
         precio: ["", [Validators.required]],
         brandId: ["", [Validators.required]],
         categorysId: ["", [Validators.required]],
+        client: ["", [Validators.required]],
       });
       this.brandSelected = "1";
     }else{
@@ -79,9 +82,21 @@ export class ProductsComponent implements OnInit, OnDestroy {
       }
     }
 
-  moveToSale(id: string){
+  sale(id: string){
+    var client = this.addForm.getRawValue().client;
+    var date = new Date();
     localStorage.setItem("productId", id);
-    window.location.assign(e.PAGE_URL + 'sale');
+    localStorage.setItem("clientId", client);
+    console.log(client, date, id)
+    this.productSubs = this.saleService.addSale(client, date.toISOString(), id).subscribe();
+    Swal.fire({
+      title: 'Product added',
+      icon: 'success',
+      confirmButtonText: 'Ok',
+    });
+    setTimeout(function(){
+      window.location.assign(e.PAGE_URL + 'sale');
+    }, 2);
     
   }
 

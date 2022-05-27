@@ -15,6 +15,23 @@ form{
     border-color: #563d7c;
 }
 
+label{
+    margin-left: 20px;
+}
+
+.clientInput{
+    margin-top: 15px;
+    margin-left: 15px;
+    border-radius: 3px;
+    color: #563d7c;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    border-color: #563d7c;
+    background-color: #f0b3c8;
+}
+
 .buttonCreate{
     background-color: #563d7c;
     border-radius: 10px;
