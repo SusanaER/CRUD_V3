@@ -4,6 +4,8 @@ import { BrandComponent } from './pages/brand/brand.component';
 import { UpdateBrandComponent } from './pages/brand/update-brand/update-brand.component';
 import { CategoryComponent } from './pages/category/category.component';
 import { UpdateCategoryComponent } from './pages/category/update-category/update-category.component';
+import { InventoryComponent } from './pages/inventory/inventory.component';
+import { UpdateInventoryComponent } from './pages/inventory/update-inventory/update-inventory.component';
 import { LoginComponent } from './pages/login/login.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { UpdateProductComponent } from './pages/products/update-product/update-product.component';
@@ -27,6 +29,8 @@ const routes: Routes = [
   {path: 'updateCategory', component: UpdateCategoryComponent},
   {path: 'promotion', component: PromotionComponent},
   {path: 'updatePromotion', component: UpdatePromotionComponent},
+  {path: 'inventory', component: InventoryComponent},
+  {path: 'updateInventory', component: UpdateInventoryComponent},
   {path: '**', redirectTo: 'login'}
 ];
 

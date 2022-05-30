@@ -17,6 +17,8 @@ import { UpdateCategoryComponent } from './pages/category/update-category/update
 import { PromotionComponent } from './pages/promotion/promotion/promotion.component';
 import { UpdatePromotionComponent } from './pages/promotion/update-promotion/update-promotion.component';
 import { UpdateRClientComponent } from './pages/r-client/update-rclient/update-rclient.component';
+import { InventoryComponent } from './pages/inventory/inventory.component';
+import { UpdateInventoryComponent } from './pages/inventory/update-inventory/update-inventory.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +34,9 @@ import { UpdateRClientComponent } from './pages/r-client/update-rclient/update-r
     UpdateCategoryComponent,
     PromotionComponent,
     UpdatePromotionComponent,
-    UpdateRClientComponent
+    UpdateRClientComponent,
+    InventoryComponent,
+    UpdateInventoryComponent
   ],
   imports: [
     BrowserModule,

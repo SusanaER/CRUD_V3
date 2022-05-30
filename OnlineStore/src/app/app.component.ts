@@ -44,5 +44,9 @@ export class AppComponent {
   clients(){
     window.location.assign(e.PAGE_URL+'clients');
   }
+
+  inventory(){
+    window.location.assign(e.PAGE_URL+'inventory');
+  }
 }
 

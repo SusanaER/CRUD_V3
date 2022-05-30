@@ -9,6 +9,7 @@ import { BrandModel } from 'src/app/commun/models/brand.model';
 import { BrandService } from 'src/app/services/brand/brand.service';
 import {formatDate} from '@angular/common';
 import { SaleService } from 'src/app/services/sale/sale.service';
+import { InventoryService } from 'src/app/services/inventory/inventory.service';
 
 @Component({
   selector: 'app-products',
@@ -23,7 +24,7 @@ export class ProductsComponent implements OnInit, OnDestroy {
   brandSelected!: string;
   brandSubs!: Subscription;
 
-  constructor(private saleService: SaleService,private productService: ProductService, private brandService: BrandService, private router: Router, private formBuilder: FormBuilder ) { }
+  constructor(private inventoryService: InventoryService,private saleService: SaleService,private productService: ProductService, private brandService: BrandService, private router: Router, private formBuilder: FormBuilder ) { }
   
   ngOnInit(): void {
     localStorage.removeItem("id");
